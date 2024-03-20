@@ -2,7 +2,7 @@
   "id": "01aa6311-3918-4cf7-98cf-f5ad76ff8e1b",
   "name": "Ole Jepsen EM Role Center",
   "publisher": "Knowledge Partner",
-  "version": "1.0.0.0",
+  "version": "1.8.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -27,6 +27,7 @@
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "22.0.0.0",
+  "runtime": "12.1",
   "idRanges": [
     {
       "from": 50200,

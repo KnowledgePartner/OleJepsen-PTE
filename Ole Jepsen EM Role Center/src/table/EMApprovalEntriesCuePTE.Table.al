@@ -1,5 +1,8 @@
 table 50200 "EM Approval Entries Cue PTE"
 {
+    ObsoleteState = Removed;
+    ObsoleteReason = 'Removed';
+
     fields
     {
         field(1; "Primary Key"; Code[10])
@@ -8,9 +11,8 @@ table 50200 "EM Approval Entries Cue PTE"
         }
         field(10; "EM Approval Entries"; Integer)
         {
-            Caption = 'Approval Entries';
-            FieldClass = FlowField;
-            CalcFormula = count("CEM Approval Entry" where("Approver ID" = filter(Database::User), Status = filter(Open)));
+            CaptionML = ENU = 'Approval Entries', DAN = 'Expense Godkendelsesposter';
+            FieldClass = Normal;
             Editable = false;
         }
     }
@@ -22,5 +24,4 @@ table 50200 "EM Approval Entries Cue PTE"
             Clustered = true;
         }
     }
-
 }
